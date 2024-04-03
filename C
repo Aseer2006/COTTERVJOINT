@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float D, d; // Diameter of larger and smaller rod/bar respectively
+    
+    // Input rod/bar diameters
+    printf("Enter diameter of larger rod/bar (D): ");
+    scanf("%f", &D);
+    printf("Enter diameter of smaller rod/bar (d): ");
+    scanf("%f", &d);
+    
+    // Calculating cotter dimensions
+    float W = D / 4; // Cotter width
+    float T = d / 6; // Cotter thickness
+    float L = 1.5 * d; // Length of cotter
+    float d_cotter_pin = d / 2; // Diameter of cotter pin
+    
+    // Output cotter dimensions
+    printf("\nCotter Width (W): %.2f units\n", W);
+    printf("Cotter Thickness (T): %.2f units\n", T);
+    printf("Length of Cotter (L): %.2f units\n", L);
+    printf("Diameter of Cotter Pin: %.2f units\n", d_cotter_pin);
+    
+    return 0;
+}
